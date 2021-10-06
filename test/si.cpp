@@ -5,17 +5,13 @@ using namespace si;
 
 
 int main() {
-  auto side = 10_m;
-  Area area = side * side;
-  Volume vol = area * side;
+  auto slow = 10_km / 1_h;
+  auto fast = 10_m / 1_s;
+  
+  std::cout << "the slow speed is: " << slow.value() << " m/s\n";
+  std::cout << "the fast speed is: " << fast.value() << " m/s\n";
 
-  Speed s = 30_m / 1_s;
-
-  auto strange_volume = 1.0_foot3;
-  std::cout << "one cubic foot is " << strange_volume.value() << " [m^3]" << std::endl;
-
-  Angle alpha = 180_deg;
-  std::cout << "180 [deg] =  " << alpha.value() << " [rad]" << std::endl;
-
+  //Mass M = fast;
+      
   return 0;
 }
