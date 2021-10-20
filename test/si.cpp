@@ -10,7 +10,7 @@ int main() {
   
   std::cout << "the slow speed is: " << slow.value() << " m/s\n";
   std::cout << "the fast speed is: " << fast.value() << " m/s\n";
-
+  std::cout << "slow < fast " << std::boolalpha << (slow < fast) << std::endl;
   //Mass M = fast;
       
   return 0;
